@@ -1,0 +1,19 @@
+{
+  "name": "RV2",
+  "version": "0.0.1",
+  "description": "Setting up and getting started with rv2",
+  "main": "index.js",
+  "authors": {
+    "name": "Jordin Marshall",
+    "email": "jordin.marshall@technologyadvice.com"
+  },
+  "repository": "https://github.com/jordin-marshall/ta-documentation/RV2",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
