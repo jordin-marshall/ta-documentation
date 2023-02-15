@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'RV2 Docs and Troubleshooting',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -35,29 +35,36 @@ module.exports = {
     nav: [
       {
         text: 'Guide',
-        link: '/guide/',
+        link: '/guide/getting-started/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Traction',
+        link: 'https://traction.technologyadvice.com'
       },
       {
         text: 'VuePress',
         link: 'https://v1.vuepress.vuejs.org'
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    sidebar: [
+      "/",
+      {
+        title: 'Guide',
+        type: 'group',
+        collapsable: false,
+        children: [
+          {
+            title: 'Getting Started',
+            path: '/guide/getting-started/',
+            collapsable: false,
+            children: [
+              ['/guide/getting-started/pre-reqs', 'Pre-Reqs'],
+              ['/guide/getting-started/wsl', 'WSL'],
+            ],
+          },
+        ]
+      }
+    ]
   },
 
   /**
